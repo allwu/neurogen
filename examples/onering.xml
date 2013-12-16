@@ -1,0 +1,31 @@
+<circuit name='onering' num_popl='2'>
+	<population name='exc' size='120'>
+		<cell>
+			<type vreset='iafreset_exc' vthresh='iafthresh_exc' rstep='rstep_exc' vleak='gleak'>IAF</type>
+		</cell>
+		<synapse name='inhexc'>
+			<pre>inh</pre>
+			<type E='egaba' A='4096' tau='tau_gaba'>GABA</type>
+			<weights>FUNC</weights>
+		</synapse>
+		<synapse name='ext'>
+			<pre>INPUT</pre>
+			<type E='eampa' A='4096' tau='tau_ampa'>AMPA</type>
+		</synapse>
+	</population>
+	<population name='inh' size='120'>
+		<cell>
+			<type vreset='iafreset_inh' vthresh='iafthresh_inh' rstep='rstep_inh' vleak='gleak_inh'>IAF</type>
+		</cell>
+		<synapse name='inhinh'>
+			<pre>inh</pre>
+			<type E='egaba' A='4096' tau='tau_gaba'>GABA</type>
+			<weights>FUNC</weights>
+		</synapse>
+		<synapse name='excinh'>
+			<pre>exc</pre>
+			<type E='enmda' A='65535' tau='tau_nmda'>NMDA</type>
+			<weights>FUNC</weights>
+		</synapse>
+	</population>
+</circuit>
