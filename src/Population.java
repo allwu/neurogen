@@ -163,8 +163,8 @@ public class Population {
 			res += s.getVarDec();
 			
 		}
-		res += "unsigned short int vm_"+name+"["+Integer.toString()+"];\n";
-		res += "unsigned short int rp_"+name+"["+Integer.toString()+"];\n";
+		res += "unsigned short int vm_"+name+"["+Integer.toString(0)+"];\n";
+		res += "unsigned short int rp_"+name+"["+Integer.toString(0)+"];\n";
 	
 		return res;
 	}

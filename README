@@ -1,16 +1,17 @@
 NeuroGen
 
-NeuroGen is a FPGA platform for customized construction of neural simulation. It utilizes FPGA 
-high-level synthesis tools to generate energy-efficient implementation of neural microcircuit 
-simulations from a XML-based description. For technical details of this project please refer to
-the following paper:
+NeuroGen is a FPGA platform for customized construction of neural simulation. It utilizes FPGA high-level synthesis tools to generate energy-efficient implementation of neural microcircuit simulations from a XML-based description. For technical details of this project please refer to the following paper:
 
 H.T. Blair, J. Cong, D. Wu. FPGA Simulation Engine for Customized Construction of Neural 
 Microcircuit. Proceedings of the 2013 International Conference on Computer-Aided Design 
 (ICCAD 2013), pp. 229, November 2013.
 
-To start trying NeuroGen, follow the simple steps:
+This project is still under development, this README file will be updated when the software is available. If you have any questions, please contact Di Wu (Allan) at allwu@cs.ucla.edu
 
+To start trying NeuroGen, follow the simple steps: 
 # make 
 # ./scripts/neurogen ./examples/onering.xml
+
+Allan Wu
+12/17/2013
 
